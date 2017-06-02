@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">逆元计算器</string>
+    <string name="action_settings">Settings</string>
+    <string name="calculate">计算结果</string>
+    <string name="num_a">a：</string>
+    <string name="num_b">b：</string>
+    <string name="hint_a">请输入第1个数字</string>
+    <string name="hint_b">请输入第2个数字</string>
+    <string name="clear_text">清除</string>
+    <string name="OK">确定</string>
+    <string name="a_and_b_must_be_num">a和b必须是正整数。</string>
+    <string name="a_b_gcd">a和b的最大公约数：</string>
+    <string name="a_b_lcm">a和b的最小公倍数：</string>
+    <string name="a_b_mul_inverse">a关于模b的乘法逆元：</string>
+    <string name="a_b_not_coprime">a与b不互素</string>
+    <string name="a_or_b_empty">a或者b为空。</string>
+    <string name="about_back">返 回</string>
+    <string name="about_info">相关信息</string>
+    <string name="action_about">关于</string>
+    <string name="action_exit">退出</string>
+    <string name="action_feedback">用户反馈</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="click_calculate_button">请先点击计算按钮。</string>
+    <string name="license">"\t\t现代密码学上课时，为方便计算乘法逆元，免除手算的复杂过程。借鉴现有算法和相关计算器布局。做出本软件。\n\t\t感谢 @独毒火 http://weibo.com/neuliying/ 提供的思路"</string>
+    <string name="mul_inv_process">乘法逆元辗转相除过程</string>
+    <string name="num_invalid">输入的数据不合法！</string>
+    <string name="num_too_big_or_zero">输入的数值为0或者过大。</string>
+    <string name="version">1.0</string>
+    <string name="name">\@Gsealy\nStudy Jams 2017</string>
+    <string name="solve">\t\t例如，求5关于模14的乘法逆元：\n
+                         14=5*2+4\n
+                         5=4*1+1\n
+                         说明5与14互素，存在5关于14的乘法逆元。\n
+                         1=5-4=5-(14-5*2)=5*3-14\n
+                         因此，5关于模14的乘法逆元为3。</string>
+    <string name="what_mean">\t\t乘法逆元，是指数学领域群G中任意一个元素a，都在G中有唯一的逆元r,具有性质a×r=r×a=e，其中e为该群的单位元。</string>
+    <string name="ojld">\t\t基本算法：对于不完全为 0 的非负整数 a，b，\n
+        gcd（a，b）表示 a，b 的最大公约数，必然存在整数对 x，y ，使得 gcd（a，b）=ax+by。\n
+证明：设 a>b。\n
+　　1，显然当 b=0，gcd（a，b）=a。此时 x=1，y=0；\n
+　　2，ab!=0 时\n
+　　设 ax1+by1=gcd(a,b);\n
+　　bx2+(a mod b)y2=gcd(b,a mod b);\n
+　　根据朴素的欧几里德原理有 gcd(a,b)=gcd(b,a mod b);\n
+　　则:ax1+by1=bx2+(a mod b)y2;\n
+　　即:ax1+by1=bx2+(a-(a/b)*b)y2=ay2+bx2-(a/b)*by2;\n
+　　根据恒等定理得：x1=y2; y1=x2-(a/b)*y2;\n
+        这样我们就得到了求解 x1,y1 的方法：x1，y1 的值基于 x2，y2.\n
+　  上面的思想是以递归定义的，因为 gcd 不断的递归求解一定会有个时候 b=0，所以递归可以结束。</string>
+</resources>
