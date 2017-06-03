@@ -27,7 +27,7 @@
     <string name="mul_inv_process">乘法逆元辗转相除过程</string>
     <string name="num_invalid">输入的数据不合法！</string>
     <string name="num_too_big_or_zero">输入的数值为0或者过大。</string>
-    <string name="version">1.0</string>
+    <string name="version">1.02</string>
     <string name="name">\@Gsealy\nStudy Jams 2017</string>
     <string name="solve">\t\t例如，求5关于模14的乘法逆元：\n
                          14=5*2+4\n
